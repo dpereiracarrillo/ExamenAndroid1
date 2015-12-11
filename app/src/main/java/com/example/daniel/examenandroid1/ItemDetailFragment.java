@@ -18,21 +18,13 @@ import com.example.daniel.examenandroid1.dummy.DummyContent;
  * on handsets.
  */
 public class ItemDetailFragment extends Fragment {
-    /**
-     * The fragment argument representing the item ID that this fragment
-     * represents.
-     */
+
     public static final String ARG_ITEM_ID = "item_id";
 
-    /**
-     * The dummy content this fragment is presenting.
-     */
+
     private DummyContent.DummyItem mItem;
 
-    /**
-     * Mandatory empty constructor for the fragment manager to instantiate the
-     * fragment (e.g. upon screen orientation changes).
-     */
+
     public ItemDetailFragment() {
     }
 
@@ -63,6 +55,7 @@ public class ItemDetailFragment extends Fragment {
         if (mItem != null) {
             ((TextView) rootView.findViewById(R.id.item_detail)).setText(mItem.details);
         }
+
 
         return rootView;
     }
